@@ -1,8 +1,28 @@
-# Anomal(ino)
+# Data Acquisition Firmware
 
-A Proof of Concept of running a small anomaly detection model on a Arduino UNO
-R4 WiFi.
+The data acquisition firmware capture data from the movement modulino and sends
+it to the serial port. A corresponding python program then capture such data in
+order to save it to a csv file. 
 
-Code lives in two branches:
-* `data_acquisition`: contains code for the data acquisition firmware
-* `anomaly_detection`: contains the code for the anomaly detection firmware
+## Commands
+
+### Build
+`pio run`
+
+### Flash to board
+`pio run --target upload`
+
+### Serial monitor 
+`pio device monitor --baud 9600`
+
+### Flash & Monitor 
+`pio run --target upload && pio device monitor`
+
+### Clean build
+`pio run --target clean`
+
+### Check available serial ports
+`pio device list`
+
+### Generate `compile_commands.json`
+`pio run --target compiledb`

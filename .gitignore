@@ -1,0 +1,5 @@
+.pio
+.cache
+.DS_Store
+.env
+compile_commands.json
