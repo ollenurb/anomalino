@@ -14,6 +14,12 @@ void serial_task(void *params) {
             Serial.print(data.y);
             Serial.print(", ");
             Serial.print(data.z);
+            Serial.print(", ");
+            Serial.print(data.roll);
+            Serial.print(", ");
+            Serial.print(data.pitch);
+            Serial.print(", ");
+            Serial.print(data.yaw);
             Serial.println("]");
         }
     }

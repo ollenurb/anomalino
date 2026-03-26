@@ -6,6 +6,9 @@ typedef struct {
     float x ;
     float y;
     float z;
+    float pitch;
+    float roll;
+    float yaw;
 } SensorData;
 
 /* Shared infrastructure between tasks */
